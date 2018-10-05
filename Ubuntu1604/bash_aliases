@@ -1,0 +1,14 @@
+# git related aliases
+alias gls='git ls-files'
+alias glog='git log --oneline'
+alias gs='git status'
+alias gb='git branch -a'
+alias ga='git add *'
+alias gd='git diff '
+
+# git ls related
+alias ls='ls -GFh'
+
+# clipboard
+alias pbcopy='xsel --clipboard --input'
+alias pbpaste='xsel --clipboard --output'
