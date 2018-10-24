@@ -7,7 +7,7 @@ GREEN='\033[0;32m'
 YELLOW='\033[1;33m'
 NC='\033[0m' # No Color
 
-PKG_TO_INSTALL="vim tmux xsel curl"
+PKG_TO_INSTALL="vim tmux xsel curl openssh-server"
 
 printf "${GREEN}Initial setup for Ubuntu 16.04${NC}\n"
 
