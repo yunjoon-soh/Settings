@@ -35,7 +35,8 @@ fi
 printf "${GREEN}OK    ${NC}\"sudo apt install ${PKG_TO_INSTALL}\"${NC}\n"
 
 # install atom
-curl -sL https://packagecloud.io/AtomEditor/atom/gpgkey && sudo sh -c 'echo "deb [arch=amd64] https://packagecloud.io/AtomEditor/atom/any/ any main" > /etc/apt/sources.list.d/atom.list' && sudo apt-get install atom
+sudo add-apt-repository ppa:webupd8team/atom
+sudo apt-get install atom
 if [ $? -ne 0 ]; then
 	printf "${RED} Failed \"sudo apt install atom\"${NC}\n"
 	exit;
