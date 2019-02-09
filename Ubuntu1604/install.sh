@@ -36,6 +36,7 @@ printf "${GREEN}OK    ${NC}\"sudo apt install ${PKG_TO_INSTALL}\"${NC}\n"
 
 # install atom
 sudo add-apt-repository ppa:webupd8team/atom
+sudo apt-get update
 sudo apt-get install atom
 if [ $? -ne 0 ]; then
 	printf "${RED} Failed \"sudo apt install atom\"${NC}\n"
@@ -45,6 +46,7 @@ printf "${GREEN}OK    ${NC}\"sudo apt install atom\"${NC}\n"
 
 # install caffeine
 sudo add-apt-repository ppa:caffeine-developers/ppa && sudo apt-get update && sudo apt-get install caffeine
+sudo apt-get update
 if [ $? -ne 0 ]; then
 	printf "${RED} Failed \"sudo apt install caffeine\"${NC}\n"
 	exit;
