@@ -9,3 +9,10 @@ let $LANG = 'en_US'
 source $VIMRUNTIME/delmenu.vim
 source $VIMRUNTIME/menu.vim
 
+set hlsearch
+set colorcolumn=80
+
+set shiftwidth=4
+set softtabstop=0 expandtab
+set tags=./tags,tags;$HOME
+
